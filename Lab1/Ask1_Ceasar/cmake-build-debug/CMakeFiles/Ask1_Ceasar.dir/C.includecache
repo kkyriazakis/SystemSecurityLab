@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/klean/CLionProjects/Ask1_Ceasar/main.c
+stdio.h
+-
+fcntl.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+

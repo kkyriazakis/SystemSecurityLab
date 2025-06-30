@@ -1,0 +1,15 @@
+Kleanthis Kyriazakis
+2015030086
+kkyriazakis
+
+Assignment 6
+
+
+We cannot detect if an incoming TCP packet is a retransmission. We can only detect an outgoing retransmission if we observe two identical packets 
+with the same destination IP without recieving an acknowledgement packet from that IP.
+
+We can detect if an incoming UDP packet is a retransmission if we observe two outgoing data request packets witout recieving the response data packet.
+
+You might need to execute the tool with root privileges 
+
+All data gets printed at the terminal

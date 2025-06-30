@@ -1,0 +1,31 @@
+Kleanthis Kyriazakis
+2015030086
+kkyriazakis
+
+logger.c: 
+	No changes made to this file since assignment 4
+		
+
+ransomware.sh:
+	This script is called with 2 argumens as below:
+		./ransomware.sh path X
+	If you want to create the files on current path, pass "./" in path parameter. 
+	1.The tool creates the directory if it does not exist. Then, with LD_PRELOAD, calls test_aclog with -c (create) argument
+	  so that it creates a specific file, the title of which is also an argument.
+	2.Then the tool calls test_aclog with -e (encrypt) argument so that it encrypts the given file
+	3.Deletes the original file
+
+test_aclog.c:
+	Depending on the input arguments, either creates or encrypts a file using fopen, fwrite.
+	To encrypt the file, the encrypt function from assignment2 was used with some modifications.
+	
+		
+acmonitor.c:
+	Added 2 new functions for argumens -e and -v
+	
+	get_last20min_files(): 
+		Returns total number of created files in the last 20 minutes by comparing the timestamps.
+		
+	find_ransomware();
+		Prints all the files that were encrypted by the ransomware by comparing the last part of the filename to check if it
+		contains the substring ".encrypt"

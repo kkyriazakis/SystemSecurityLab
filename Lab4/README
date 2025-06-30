@@ -1,0 +1,29 @@
+Kleanthis Kyriazakis
+2015030086
+kkyriazakis
+
+logger.c:
+	All log entries are stored as strings in form:
+		"%d-%s-%s-%s-%d-%d-%s\n"
+
+
+	getFingerprint():
+		is used in fopen() to locally reopen the file using the original fopen() and get its fingerprint
+		
+	getFingerprintWrite():
+		is used in fwrite() to locally reopen the file using the original fopen(), combine its contents with the 
+		data intented to be written, and get its finger print
+		
+		
+acmonitor.c:
+	
+	AnalyzeLogFile(): 
+		Gets a string containing log file data.
+		Generates an array of entry structs that contain all the log information.
+
+
+test_aclog.c:
+	Testing program does the following:
+		1.Creates first 10 files and writes their name inside
+		2.Opens file_0 with "a+" mode. Then writes an empty string, then the string "test", then the char "1"
+		3.Using syscall, removes write previleges from all 10 files and attempts to write a string to all of them

@@ -1,0 +1,3 @@
+/mnt/c/Users/klean/CLionProjects/Ask1_Ceasar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/klean/CLionProjects/Ask1_Ceasar/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/klean/CLionProjects/Ask1_Ceasar/cmake-build-debug/CMakeFiles/Ask1_Ceasar.dir
